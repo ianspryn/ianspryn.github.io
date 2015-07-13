@@ -1,13 +1,13 @@
 Package: com.firebirdflame.reos
-Version: 9.0-beta
+Version: 10.0-beta
 Architecture: iphoneos-arm
 Maintainer: Ian S <thefirebirdflame@gmail.com>
 Depends: org.coolstar.customclock, winterboard
-Filename: ./debs/com.firebirdflame.reos_9.0-beta_iphoneos-arm.deb
-Size: 28555272
-MD5sum: 0a6ca9b3cd7d3a360de18b566891b0c1
-SHA1: 659a3a35c94883eb3c38b8b37aa645e4db3fe29d
-SHA256: ed26a8b34f77d932495c3474a260b6cd1a734545a89fa98f3dae5e0ef9e9bfa6
+Filename: ./debs/com.firebirdflame.reos_10.0-beta_iphoneos-arm.deb
+Size: 28555266
+MD5sum: e06595d767ade0e09101dbfaa0602cc6
+SHA1: ecfa0be2aa3f37a94b715fe32ec8450cb49da5c1
+SHA256: 4979ca532ad5d782919403395455e29f38f9f942c70471294c26766c00a8aa85
 Section: Themes
 Homepage: https://twitter.com/firebirdflame1
 Description: Taking the iOS foundation, and building from it
