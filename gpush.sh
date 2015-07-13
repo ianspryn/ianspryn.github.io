@@ -1,3 +1,3 @@
 git add --all
-git commit -m "Pushed update $*"
+git commit -m "$*"
 git push
