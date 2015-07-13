@@ -1,2 +1,2 @@
-# Firebirdflame-Cydia
-Cydia Repository
+# Firebirdflame Public Cydia Repository
+By Ian S
