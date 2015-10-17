@@ -1,4 +1,5 @@
-    $('img').ready(function() {
-        $('div#fade-in').css('background-image','url(https://lh3.googleusercontent.com/iFAwaRxTD-Ou_Q8m8KcVRqeezWcRjM57mTzKBjZ-u9B1=w4000-h2000)');
-        $('div#fade-in').fadeIn(1500);
+    $('img').ready(function () {
+        $('body').css('background-image','url(https://lh3.googleusercontent.com/SsUEqWF4cua2t0vU-_Te2HuSzW5zuupN0rOoQPvMngYX=w2400-h1200)');
+        $('body').hide().fadeIn(1500);
     });
+//div#fade-in
