@@ -20,33 +20,30 @@ a {
 .ReOS {
     background: url(img/ReOS.PNG) no-repeat;
     padding-bottom: 25px;
-    width: 400px;
-    height: 400px;
-    float: left;
+    float: left; 
 }
 
 .Soft7 {
    background: url(img/Soft7.png) no-repeat;
     padding-bottom: 25px;
-    width: 400px;
-    height: 400px;
     float: right; 
 }
 
 .Dark7 {
     background: url(img/Dark7.PNG) no-repeat;
     padding-bottom: 25px;
-    width: 400px;
-    height: 400px;
     float: left;
 }
 
 .Sleek7 {
    background: url(img/Sleek7.png) no-repeat;
     padding-bottom: 25px;
-    width: 400px;
-    height: 400px;
     float: right; 
+}
+
+.ImageSize {
+    min-width: 400px;
+    min-height: 400px;
 }
 
 .ReOSPage {
@@ -112,7 +109,7 @@ a {
 }
 
 .Music {
-    background: url(img/Music.PNG);
+    background: url(img/Music.PNG) no-repeat;
     min-height: 554px;
     min-width: 300px;
     margin-left: 15px;
@@ -123,6 +120,60 @@ a {
 .ReOSMusic {
     font-family: Raleway;
     font-size: 30px;
+}
+
+.Safari {
+    min-width: 100%;
+    padding-top: 350px;
+    
+}
+
+.MouseOver:hover {
+    -ms-transform: scale(1.01,1.01); /* IE 9 */
+    -webkit-transform: scale(1.01,1.01); /* Safari */
+    transform: scale(1.03,1.03);
+    -ms-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.Safari1 {
+    background: url(img/Safari1.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 20px;
+    display: inline-block;
+    
+}
+
+.Safari2 {
+    background: url(img/Safari2.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.Safari3 {
+    background: url(img/Safari3.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.Safari4 {
+    background: url(img/Safari4.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.SafariText {
+    font-family: Raleway;
+    font-size: 30px;
+    padding: 15px;
 }
 
 .BoxHeader {
@@ -229,3 +280,16 @@ a {
 
 
 
+
+
+
+@media screen and (min-width: 862px) {
+    .ImageSize {
+    width: 400px;
+    height: 400px;
+    }
+    .BoxLeft .BoxRight {
+    width: 0%;
+    margin: 0 auto;
+    }
+}
