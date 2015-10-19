@@ -46,7 +46,7 @@ a {
     min-height: 400px;
 }
 
-.ReOSPage {
+.PageContent {
     margin-top: 8%;
 }
 
@@ -135,6 +135,11 @@ a {
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+        -webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3)));
+    -ms-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
+    filter: drop-shadow(0 13px 8px rgba(0,0,0,.3));
 }
 
 .Safari1 {
@@ -173,7 +178,16 @@ a {
 .SafariText {
     font-family: Raleway;
     font-size: 30px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+.MyFace {
+    background: url(img/STOP_PEAKING_AT_MY_CODE_please_and_thank_you.png) no-repeat;
+    min-height: 200px;
+    min-width: 200px;
+    margin-right: 50px;
+    float: right;
 }
 
 .BoxHeader {
@@ -184,6 +198,17 @@ a {
 .BoxText {
     margin: 10px;
     font-family: Asap;
+}
+
+.ReOSBox {
+    background-color: #fafafa;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -moz-box-shadow: 0 8px 15px -4px #cccccc;
+    -webkit-box-shadow: 0 8px 15px -4px #cccccc;
+    box-shadow: 0 8px 15px -4px #cccccc;
+    max-width: 90%;
 }
 
 .BoxLeft {
