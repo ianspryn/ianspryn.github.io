@@ -135,7 +135,7 @@ a {
     -ms-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-        -webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
+    -webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
     -moz-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3)));
     -ms-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
     -o-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
@@ -252,7 +252,34 @@ a {
     
 }
 
+.IconListDiv {
+    margin-bottom: 100px;
+    text-align: center;
+}
 
+.IconList {
+    background-color: #fafafa;
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px;
+    font-family: Raleway;
+    font-size: 2em;
+    transition: all .2s ease-in-out;
+}
+
+ul.column {
+    list-style-type: none;
+    overflow: hidden;
+    width: 90%;
+    padding-left: 0px;
+    font-size: 1em;
+    font-family: ASAP;
+}
+
+ul.column li {
+    font-size: 1em;
+    float: left;
+    width: 20%;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
