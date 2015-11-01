@@ -129,6 +129,8 @@ a {
 }
 
 .MouseOver:hover {
+     -o-transform: scale(1.01,1.01);
+     -moz-transform: scale(1.01,1.01);
     -ms-transform: scale(1.01,1.01); /* IE 9 */
     -webkit-transform: scale(1.01,1.01); /* Safari */
     transform: scale(1.03,1.03);
@@ -211,46 +213,34 @@ a {
     max-width: 90%;
 }
 
-.BoxLeft {
+.BoxContainer {
+    margin: 45px;
+    text-align: center;
+}
+
+.BoxLinks {
     background-color: #fafafa;
     border-radius: 0px 0px 10px 10px;
-    margin-left: 15%;
-    margin-top: 50px;
+    margin: 20px;
     -moz-box-shadow: 0 8px 15px -4px #cccccc;
     -webkit-box-shadow: 0 8px 15px -4px #cccccc;
     box-shadow: 0 8px 15px -4px #cccccc;
     max-width: 400px;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     transition: all .2s ease-in-out;
 }
 
-.BoxRight {
-    background-color: #fafafa;
-    border-radius: 0px 0px 10px 10px;
-    margin-right: 15%;
-    margin-top: 50px;
-    -moz-box-shadow: 0 8px 15px -4px #cccccc;
-    -webkit-box-shadow: 0 8px 15px -4px #cccccc;
-    box-shadow: 0 8px 15px -4px #cccccc;
-    max-width: 400px;
-    float: right;
-        transition: all .2s ease-in-out;
-
-}
-
-.BoxLeft:hover {
+.BoxLinks:hover {
+     -o-transform: scale(1.01,1.01);
+     -moz-transform: scale(1.01,1.01);
     -ms-transform: scale(1.01,1.01); /* IE 9 */
     -webkit-transform: scale(1.01,1.01); /* Safari */
     transform: scale(1.01,1.01);
     
 }
 
-.BoxRight:hover {
-    -ms-transform: scale(1.01,1.01); /* IE 9 */
-    -webkit-transform: scale(1.01,1.01); /* Safari */
-    transform: scale(1.01,1.01);
-    
-}
+
 
 .IconListDiv {
     margin-bottom: 100px;
@@ -340,7 +330,7 @@ ul.column li {
     width: 400px;
     height: 400px;
     }
-    .BoxLeft .BoxRight {
+    .Box {
     width: 0%;
     margin: 0 auto;
     }
