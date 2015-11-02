@@ -20,12 +20,12 @@
     <meta name="msapplication-TileColor" content="#3372DF">
       <script type="text/javascript" src="jquery.min.js"></script>
       <script language="javascript" type="text/javascript" src="javscript.js"></script>
-    <link href="css" rel="stylesheet">
-    <link href="icon" rel="stylesheet">
     <link rel="stylesheet" href="IS.css">
     <link rel="stylesheet" href="material.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <link href="http://firebirdflame.github.io/icon-request.html">
+    <script src="material.min.js"></script>
       
       
     <style>
@@ -44,27 +44,57 @@
     
   <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base" style="display: block;">
       
-    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <header>
+        <div class="mdl-layout__drawer-button has-drawer">
+        <i class="material-icons">menu</i>
+        </div>
+        <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="about.html">Themes &amp; Tweaks</a>
+            <a class="mdl-navigation__link" href="themes-tweaks.html">About Me</a>
+            <a class="mdl-navigation__link" href="contact">Contact</a>
+            <a class="mdl-navigation__link" href="icon-request.html">Request Icon</a>
+            <a class="mdl-navigation__link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=thefirebirdflame%40gmail%2ecom&amp">Donate</a>
+            </nav>
+        </div>
+        
     <!-- Uses a transparent header that draws on top of the layout's background -->
 
 
 <style>
-.layout-transparent {
+.background-ReOS {
   background: url('https://lh3.googleusercontent.com/SsUEqWF4cua2t0vU-_Te2HuSzW5zuupN0rOoQPvMngYX=w2400-h1200') center / cover;
     position: absolute;
-    display: none;
 }
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
+.background-ReOS .mdl-layout__header,
+.background-ReOS .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
   color: #383838;
 }
 </style>
  
-<div class="layout-transparent mdl-layout mdl-js-layout" id="fade-in" style="display: block;">
+<div class="background-ReOS mdl-layout mdl-js-layout" id="fade-in" style="display: block;">
 
   <header class="mdl-layout__header mdl-layout__header--transparent">
+      
+      
+      <div class="mdl-layout__drawer-button has-drawer">
+        <i class="material-icons">menu</i>
+        </div>
+        <div class="mdl-layout__drawer">
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index.html">Home</a>
+            <a class="mdl-navigation__link" href="about.html">Themes &amp; Tweaks</a>
+            <a class="mdl-navigation__link" href="themes-tweaks.html">About Me</a>
+            <a class="mdl-navigation__link" href="contact">Contact</a>
+            <a class="mdl-navigation__link" href="icon-request.html">Request Icon</a>
+            <a class="mdl-navigation__link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=thefirebirdflame%40gmail%2ecom&amp">Donate</a>
+            </nav>
+        </div>
+      
+      
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <a class="mdl-layout-title" href="http://firebirdflame.github.io/index.html">Ian S</a>
@@ -115,7 +145,7 @@
               <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://firebirdflame.github.io/" target="_blank" id="add-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Add to Cydia</a>
 
           
-    <script src="material.min.js"></script>
+    
           
   
 

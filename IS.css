@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Asap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
 
 html, body {
     min-height: 100%;
@@ -333,5 +335,11 @@ ul.column li {
     .Box {
     width: 0%;
     margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .material-icons {
+        display: none;
     }
 }
