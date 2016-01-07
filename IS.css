@@ -52,18 +52,23 @@ a {
     margin-top: 8%;
 }
 
+.ReOSHeaderDiv {
+    text-align: center;
+}
+
 .ReOSHeader {
-    background: url(img/ReOSHeader.PNG) no-repeat;
-    min-height: 95px;
-    min-width: 640px;
+ /*   background: url(img/ReOSHeader.PNG) no-repeat;
+    max-height: 350px;
+    max-width: 349px; */
+    max-width: 35%;
     -webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
     -moz-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3)));
     -ms-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
     -o-filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
     filter: drop-shadow(0 20px 13px rgba(0,0,0,.3));
-    width: 0%;
-    margin: 0 auto;
-    padding-bottom: 100px;
+    min-width: 0%;
+    margin: 0 auto; 
+    padding-bottom: 70px;
 }
 
 .ReOSQuote {
@@ -71,6 +76,7 @@ a {
     font-size: 65px;
     text-align: center;
     padding-bottom: 100px;
+    line-height: 100%;
 }
 
 .ReOSLayer {
