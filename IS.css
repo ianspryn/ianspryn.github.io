@@ -4,6 +4,7 @@
 
 
 html, body {
+    padding: 100px;
     min-height: 100%;
     min-width: 100%;
     background-color: #eeeeee;
@@ -83,17 +84,38 @@ a {
     line-height: 100%;
 }
 
+.ReOSQuote-Cydia {
+    font-family: Raleway;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 100px;
+    line-height: 100%;
+}
+
 .ReOSLayer {
     font-family: Raleway;
     font-size: 30px;
 }
 
+.ReOSLayer-Cydia {
+    font-family: Raleway;
+    font-size: 20px;
+}
+
 .Newsstand {
-        background: url(img/Newssstand.png) no-repeat;
+    background: url(img/Newsstand.png) no-repeat;
     min-height: 254px;
     min-width: 300px;
     margin-left: 15px;
-        float: left;
+    float: left;
+}
+
+.Newsstand-Cydia {
+    background: url(img/Newsstand-Cydia.png) no-repeat;
+    min-height: 254px;
+    min-width: 300px;
+    margin-left: 15px;
+    float: left;
 }
 
 .ReOSUserQuotes {
@@ -113,6 +135,15 @@ a {
     float: right;
 }
 
+.Passcode-Cydia {
+    background: url(img/Lockscreen-Cydia.PNG) no-repeat;
+    min-height: 568px;
+    min-width: 300px;
+    margin-right: 15px;
+    margin-left: 30px;
+    float: right;
+}
+
 .ReOSPasscode {
     font-family: Raleway;
     font-size: 30px;
@@ -120,8 +151,15 @@ a {
     
 }
 
+.ReOSPasscode-Cydia {
+    font-family: Raleway;
+    font-size: 20px;
+    text-align: right;
+    
+}
+
 .Music {
-    background: url(img/Music.PNG) no-repeat;
+    background: url(img/Music-Cydia.PNG) no-repeat;
     min-height: 554px;
     min-width: 300px;
     margin-left: 15px;
@@ -132,6 +170,11 @@ a {
 .ReOSMusic {
     font-family: Raleway;
     font-size: 30px;
+}
+
+.ReOSMusic-Cydia {
+    font-family: Raleway;
+    font-size: 20px;
 }
 
 .Safari {
@@ -226,6 +269,15 @@ a {
     max-width: 90%;
 }
 
+.ReOSBox-Cydia {
+    background-color: #fafafa;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -moz-box-shadow: 0 8px 15px -4px #cccccc;
+    -webkit-box-shadow: 0 8px 15px -4px #cccccc;
+    box-shadow: 0 8px 15px -4px #cccccc;
+}
+
 .BoxContainer {
     margin: 45px;
     text-align: center;
@@ -260,6 +312,7 @@ a {
     text-align: center;
 }
 
+
 .IconList {
     background-color: #fafafa;
     border-radius: 10px 10px 10px 10px;
@@ -268,6 +321,16 @@ a {
     font-size: 2em;
     transition: all .2s ease-in-out;
 }
+
+
+.IconList-Cydia {
+    background-color: #fafafa;
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px;
+    font-family: Raleway;
+    font-size: 15px;
+}
+
 
 .about {
    position: relative;
