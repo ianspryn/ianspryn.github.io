@@ -55,6 +55,8 @@ a {
 
 .PageContent {
     margin-top: 8%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .ReOSHeaderDiv {
@@ -177,9 +179,17 @@ a {
     font-size: 20px;
 }
 
+.Screenshots {
+    font-family: Raleway;
+    font-size: 30px;
+    padding-top: 350px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .Safari {
     min-width: 100%;
-    padding-top: 350px;
+    padding-top: 20px;
     
 }
 
@@ -235,8 +245,8 @@ a {
 .SafariText {
     font-family: Raleway;
     font-size: 30px;
-    padding-top: 15px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .MyFace {
@@ -329,6 +339,13 @@ a {
     padding: 30px;
     font-family: Raleway;
     font-size: 15px;
+}
+
+.screenshot-image {
+    max-width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 
