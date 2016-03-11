@@ -98,8 +98,10 @@ a {
 }
 
 .ReOSLayer-Cydia {
+    padding-top: 30px;
     font-family: Raleway;
     font-size: 20px;
+    padding-left: 20px;
 }
 
 .Newsstand {
@@ -115,6 +117,7 @@ a {
     min-height: 169px;
     min-width: 200px;
     float: left;
+    
 }
 
 .ReOSUserQuotes {
@@ -143,6 +146,7 @@ a {
 }
 
 .ReOSPasscode {
+    padding-top: 20px;
     font-family: Raleway;
     font-size: 30px;
     text-align: right;
@@ -153,6 +157,7 @@ a {
     font-family: Raleway;
     font-size: 20px;
     text-align: right;
+    padding-right: 20px;
     
 }
 
@@ -160,7 +165,8 @@ a {
     background: url(img/Music-Cydia.PNG) no-repeat;
     min-height: 369px;
     min-width: 200px;
-    margin-right: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
     float: left;
 }
 
