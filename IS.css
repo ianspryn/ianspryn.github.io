@@ -98,7 +98,7 @@ a {
 }
 
 .ReOSLayer-Cydia {
-    padding-top: 30px;
+    padding-top: 110px;
     font-family: Raleway;
     font-size: 20px;
     padding-left: 20px;
@@ -178,6 +178,7 @@ a {
 .ReOSMusic-Cydia {
     font-family: Raleway;
     font-size: 20px;
+    padding-top: 180px;
 }
 
 .Screenshots {
@@ -240,6 +241,39 @@ a {
     min-height: 120px;
     min-width: 120px;
     margin: 20px;
+    display: inline-block;
+}
+
+.Safari1-Cydia {
+    background: url(img/Safari1.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 15px;
+    display: inline-block;
+    
+}
+
+.Safari2-Cydia {
+    background: url(img/Safari2.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.Safari3-Cydia {
+    background: url(img/Safari3.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.Safari4-Cydia {
+    background: url(img/Safari4.png) no-repeat;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 15px;
     display: inline-block;
 }
 
@@ -335,11 +369,9 @@ a {
 
 
 .IconList-Cydia {
-    background-color: #fafafa;
-    border-radius: 10px 10px 10px 10px;
-    padding: 30px;
+    color: #65b7c7;
+    font-size: 20px;
     font-family: Raleway;
-    font-size: 15px;
 }
 
 .screenshot-image {
