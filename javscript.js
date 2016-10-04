@@ -1,6 +1,6 @@
-    $('img').ready(function () {
+    $('html').ready(function () {
 
-        $('body').hide().fadeIn(1500);
+        $('html').hide().fadeIn(1500);
     });
 $(document).ready(function() {
     $('.mdl-layout__drawer').click(function(){
