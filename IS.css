@@ -305,12 +305,12 @@ a {
 
 .ReOSBox {
     background-color: #fafafa;
-    border-radius: 10px 10px 10px 10px;
     margin-top: 50px;
     margin-bottom: 50px;
     -moz-box-shadow: 0 8px 15px -4px #cccccc;
     -webkit-box-shadow: 0 8px 15px -4px #cccccc;
     box-shadow: 0 8px 15px -4px #cccccc;
+    padding: 50px;
     max-width: 100%;
 }
 
