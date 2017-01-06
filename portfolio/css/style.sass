@@ -1,0 +1,87 @@
+$python-color: #1b3952;
+$java-color: #3a4e5f;
+$html-color: #3a4e5f;
+$css-color: #29a9df;
+$javascript-color: #ffcc33;
+
+
+.experience {
+    background-color: $python-color;
+}
+
+.text-swap {
+    color: $python-color;
+    width: 200px;
+    
+    &:after {
+    padding-left: 20px;
+    content: 0%;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    mix-blend-mode: difference;
+    }
+}
+
+
+
+
+
+$loadingTime: 10s;
+$color: rgb(255,0,0);
+
+@keyframes loading {
+  0% {
+    width: 0;
+  } 100% {
+    width: 100%;
+  }
+}
+
+@keyframes percentage { 
+  @for $i from 1 through 100 {
+    $percentage: $i + "%";
+    #{$percentage} {
+      content: $percentage;
+    }
+  }
+}
+
+.bg {
+  background-color: $color;
+  animation: loading $loadingTime linear infinite;
+}
+
+.el{
+  color: $color;
+  width: 200px;
+  border: 1px solid $color;
+  
+  &:after {
+    padding-left: 20px;
+    content: "0%";
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 20px;
+    color: rgb(0,255,255);
+    mix-blend-mode: difference;
+    animation: percentage $loadingTime linear infinite;
+  }
+}
+
+html {
+  height: 100%;
+  background-color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

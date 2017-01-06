@@ -33,6 +33,100 @@ body {
 .material-icons {
     line-height: inherit;
 }
+@media (max-width:767px) {
+    .navbar-brand {
+        margin-top: 15px;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.exception {
+    font-size: 0px;
+    min-width: 100%;
+}
+
+/* Coding experience bars */
+
+.program  {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
+    max-width: 20%;
+}
+
+/* Define colors */
+
+.python {
+    background-color: #1b3952;
+}
+
+.python > span {
+    background-color: #1b3952;
+}
+
+.java {
+    background-color: #3a4e5f;
+}
+
+.java > span {
+    background-color: #3a4e5f;
+}
+
+.html {
+        background-color: #f16529;
+}
+
+.html > span {
+    background-color: #f16529;
+}
+
+.css {
+    background-color: #29a9df;
+}
+
+.css > span {
+    background-color: #29a9df;
+}
+
+.javascript {
+    background-color: #ffcc33
+}
+
+.javascript > span {
+    background-color: #ffcc33;
+}
+
+/* Confidentiality rating of each language */
+
+.progress { 
+    height: 60px;
+    border-radius: 0px;
+    margin: 0 0 60px 0;
+    background: #eee;
+}
+
+.progress > span {
+    display: block;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-text {
+    font-family: Julius Sans One;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
 
 /* Custom Scroll Bar */
 
@@ -128,7 +222,7 @@ a:hover {
 .open .dropdown-toggle.btn-primary {
     color: #fff;
     background-color: #00AFC6;
-    border-color: #f6bf01
+    border-color: #00AFC6;
 }
 
 .btn-primary.disabled,
@@ -162,9 +256,10 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px
 }
 
+
 .btn-xl.active,
 .btn-xl:active,
-.btn-xl:focus,
+/*.btn-xl:focus, */
 .btn-xl:hover,
 .open .dropdown-toggle.btn-xl {
     color: #fff;
@@ -196,7 +291,7 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 .navbar-custom {
-    background-color: #222;
+    background-color: #eee;
     border-color: transparent
 }
 
@@ -215,8 +310,13 @@ fieldset[disabled] .btn-xl:hover {
 .navbar-custom .nav li a,
 .navbar-custom .navbar-toggle {
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    color: #252627;
     text-transform: uppercase
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .navbar-toggle:hover {
+    color: #eee;
 }
 
 .navbar-custom .navbar-collapse {
@@ -228,7 +328,7 @@ fieldset[disabled] .btn-xl:hover {
     font-size: 12px
 }
 
-.navbar-custom .navbar-toggle:focus,
+/* .navbar-custom .navbar-toggle:focus, */
 .navbar-custom .navbar-toggle:hover {
     background-color: #00AFC6
 }
@@ -238,27 +338,45 @@ fieldset[disabled] .btn-xl:hover {
     letter-spacing: 1px
 }
 
-.navbar-custom .nav li a:focus,
+/* .navbar-custom .nav li a:focus, */
 .navbar-custom .nav li a:hover {
     color: #00AFC6;
     outline: 0
 }
-
-.navbar-custom .navbar-nav>.active>a {
-    color: #fff;
-    border-color: #14b9d6;
-    border-top-style: hidden;
-    border-right-style: solid;
-    border-bottom-style: hidden;
-    border-left-style: solid;
-        
-        
+@media (min-width:768px) {
+    .navbar-custom .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus {
+        color: #00AFC6;
+        border-color: #14b9d6;
+        border-top-style: hidden;
+        border-right-style: solid;
+        border-bottom-style: hidden;
+        border-left-style: solid;
+        }     
 }
 
-.navbar-custom .navbar-nav>.active>a:focus,
+@media (max-width:767px) {
+    .navbar-custom .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus {
+        color: #00AFC6;
+        border-color: #14b9d6;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-bottom-style: hidden;
+        border-left-style: solid;
+        }     
+}
+
+/* .navbar-custom .navbar-nav>.active>a:focus, */
 .navbar-custom .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: #00AFC6;
+}
+
+.navbar-default .navbar-nav>.active>a,
+/* .navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover*/{
+    color: #00AFC6;
 }
 
 @media (min-width:768px) {
@@ -281,7 +399,7 @@ fieldset[disabled] .btn-xl:hover {
         border-radius: 0;
     }
     .navbar-custom.affix {
-        background-color: #242627;
+        background-color: #eee;
         padding: 0px;
     }
     .navbar-custom.affix .navbar-brand {
@@ -393,7 +511,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    background: rgba(254, 209, 54, .9);
+    background: rgba(20, 185, 214, .9);
     position: absolute;
     width: 100%;
     height: 100%;
