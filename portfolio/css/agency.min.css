@@ -59,7 +59,11 @@ body {
     padding-bottom: 15%;
     padding-left: 3%;
     padding-right: 3%;
-    max-width: 20%;
+    max-width: 15%;
+}
+
+.program_image {
+    max-width: 10%;
 }
 
 /* Define colors */
@@ -97,14 +101,21 @@ body {
 }
 
 .javascript {
-    background-color: #ffcc33
+    background-color: #ffcc33;
 }
 
 .javascript > span {
     background-color: #ffcc33;
 }
 
-/* Confidentiality rating of each language */
+.autohotkey {
+    background-color: #0e6915;
+}
+
+.autohotkey > span {
+    background-color: #0e6915;
+}
+
 
 .progress { 
     height: 60px;
@@ -640,7 +651,8 @@ footer ul.quicklinks {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #14b9d6;
+    /*background-color: #14b9d6;*/
+    background-color: #fff;
     color: #fff;
     border-radius: 100%;
     border: 7px solid #f1f1f1;
@@ -714,7 +726,7 @@ footer ul.quicklinks {
     .timeline>li .timeline-image h4 {
         font-size: 13px;
         margin-top: 16px;
-        line-height: 18px
+        line-height: 18px;
     }
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
@@ -788,7 +800,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #333;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat
