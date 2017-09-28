@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+
+<dict>
+				
+	<key>CalendarIconDateStyle</key>
+
+	<string>padding-top: 7; padding-right: 3; padding-left: 3; color: #eeeeee; font-size: 25px; </string>
+
+	
+	<key>CalendarIconDayStyle</key>
+
+	<string>padding: 0px 0px 0px 0px; color:#eeeeee; font-size: 0px; </string>
+
+
+</dict>
+</plist>
