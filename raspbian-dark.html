@@ -1,0 +1,74 @@
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="raspbian.css">
+                <!--<meta http-equiv="refresh" content="5" >-->
+                <script src="http://code.jquery.com/jquery-latest.js"></script>
+                <link href='../fullcalendar.min.css' rel='stylesheet' />
+                <link href='../fullcalendar.print.min.css' rel='stylesheet' media='print' />
+                <script src='../lib/moment.min.js'></script>
+                <script src='../lib/jquery.min.js'></script>
+                <script src='../fullcalendar.min.js'></script>
+                <script src='../gcal.min.js'></script>
+        </head>
+<body id = "dark">
+        <div style="width: 100%;">
+                <div id = "meh" style="float:left; width: 25%">
+                                <script type='text/javascript' src='https://darksky.net/widget/small/41.1926318,-80.0758425/us12/en.js?width=100%&height=200&title=Full Forecast&textColor=ffffff&transparency=true&skyColor=ffffff&fontFamily=Default&customFont=&units=us'></script>
+                                <script type='text/javascript' src='https://darksky.net/widget/default/41.1926318,-80.075842/us12/en.js?width=100%&height=350&title=Full Forecast&textColor=ffffff&transparency=true&skyColor=ffffff&fontFamily=Default&customFont=&units=us&htColor=dddddd&ltColor=ffffff&displaySum=no&displayHeader=no'></script>
+                </div>
+                <div id = "meh2" style="float:right; width:75%">
+                                <script type='text/javascript' src='https://darksky.net/widget/graph/41.1926318,-80.075842/us12/en.js?width=100%&height=320&textColor=ffffff&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=ffffff&tempColor=ffffff&lineColor=f8423c&markerColor=f8423c'></script>
+                                <script type='text/javascript' src='https://darksky.net/widget/graph/41.1926318,-80.075842/us12/en.js?width=100%&height=320&textColor=ffffff&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=precip_graph&timeColor=ffffff&tempColor=ffffff&lineColor=4780c2&markerColor=4780c2'></script>
+                </div>
+        </div>
+                <div style="clear:both"></div>
+                <div id = "calendar"></div>
+                <script>
+                $('#calendar').load('https://calendar.google.com/calendar/r');
+                </script>
+                <!--<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=v8fm2169c6g7phimv5jlcjnqrs%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FNew_York" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>-->
+          <!--
+                <script>
+
+                                $(document).ready(function() {
+                              
+                                  $('#calendar').fullCalendar({
+                              
+                                    header: {
+                                      left: 'prev,next today',
+                                      center: 'title',
+                                      right: 'month,listYear'
+                                    },
+                              
+                                    displayEventTime: false, // don't show the time column in list view
+                              
+                                    // THIS KEY WON'T WORK IN PRODUCTION!!!
+                                    // To make your own Google API key, follow the directions here:
+                                    // http://fullcalendar.io/docs/google_calendar/
+                                    googleCalendarApiKey: 'v8fm2169c6g7phimv5jlcjnqrs',
+                              
+                                    // US Holidays
+                                    events: 'en.usa#holiday@group.v.calendar.google.com',
+                              
+                                    eventClick: function(event) {
+                                      // opens events in a popup window
+                                      window.open(event.url, 'gcalevent', 'width=700,height=600');
+                                      return false;
+                                    },
+                              
+                                    loading: function(bool) {
+                                      $('#loading').toggle(bool);
+                                    }
+                              
+                                  });
+                              
+                                });
+                              
+                              </script>
+                            -->
+
+        <script src='https://darksky.net/map-embed/@radar,41.155,-80.079,9.js?embed=true&timeControl=false&fieldControl=false&defaultField=radar' style="height: 900px;"></script>
+
+
+</body>        
+</html>
