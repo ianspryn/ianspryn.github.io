@@ -23,6 +23,33 @@ body {
     webkit-tap-highlight-color: #14b9d6
 }
 
+@media screen and (max-width: 1283px) {
+    #main-video {
+        max-width: 100%;
+    }    
+}
+@media screen and (min-width: 1284px) {
+    
+    #main-video {
+        min-width: 100%; 
+        min-height: 100%;
+    }    
+}
+
+#main-video {
+    right: 0;
+    bottom: 0;
+}
+
+#video-overlay {
+    position:  absolute;
+    /* bottom: 0; */
+    top: 50;
+    width: 100%;
+}
+
+
+
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -318,11 +345,23 @@ fieldset[disabled] .btn-xl:hover {
     color: #14b9d6
 }
 
+@media screen and (max-width: 767px) {
+    .navbar-custom .nav li a,
+    .navbar-custom .navbar-toggle {
+        color: #252627 !important;
+    }    
+}
+
 .navbar-custom .nav li a,
 .navbar-custom .navbar-toggle {
     font-family: 'Lato', sans-serif;
-    color: #252627;
+    color: #fff;
     text-transform: uppercase
+}
+
+.navbar-custom.affix .nav li a,
+.navbar-custom.affix .navbar-toggle {
+    color: #252627;
 }
 
 .navbar-custom .nav li a:hover,
@@ -419,7 +458,6 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 header {
-    background-image: url(../img/header-bg.gif);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -450,13 +488,36 @@ header .intro-text .intro-heading {
     font-weight: 700;
     font-size: 50px;
     line-height: 50px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+}
+
+header .intro-text {
+    position: relative;
+    
+}
+
+@media screen and (min-width: 1183px) {
+    header .intro-text {
+        margin-top: calc((90% - 8070px)/13);
+    }    
+}
+
+@media screen and (max-width: 1182px) and (min-width: 601px) {
+    header .intro-text {
+        margin-top: calc((90% - 8070px)/18);
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    header .intro-text {
+        margin-top: calc((90% - 8070px)/20);
+    }  
 }
 
 @media (min-width:768px) {
     header .intro-text {
-        padding-top: 600px;
-        padding-bottom: 100px
+        /* padding-top: 600px;
+        padding-bottom: 100px */
     }
     header .intro-text .intro-lead-in {
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
