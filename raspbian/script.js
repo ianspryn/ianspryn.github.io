@@ -6,7 +6,7 @@ $(document).ready(function() {
         var sunset;
         var sunriseMilli;
         var sunsetMilli;
-
+        
         //INITIAL RUN
         getSunRiseSet(function() {
                 update();
@@ -27,16 +27,14 @@ $(document).ready(function() {
 
 
         function update() {
-                
                 if ((new Date().getTime()) > sunriseMilli && (new Date().getTime()) << sunsetMilli) {
                         //If it is after sunrise and before sunset, go to light page
-                        if (window.location.href == "file:///C:/Users/frees/Documents/GitHub/ianspryn.github.io/raspbian/raspbian-dark.html" || window.location.href == "https://ianspryn.com/raspbian/raspbian-dark.html") {
+                        if (window.location.href.indexOf("raspbian-dark.html") > -1) {
                                 window.location.href = ("index.html");
                         }
-
                 } else {
                         //Otherwise, it is night time, so go to dark page
-                        if (window.location.href == "file:///C:/Users/frees/Documents/GitHub/ianspryn.github.io/raspbian/index.html" || window.location.href == "https://ianspryn.com/raspbian/index.html") {
+                        if (window.location.href.indexOf("index.html") > -1) {
                                 window.location.href = ("raspbian-dark.html");
                         }
                 }
