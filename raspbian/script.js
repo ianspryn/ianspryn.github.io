@@ -2,8 +2,6 @@
 
 $(document).ready(function() {
 
-        var sunrise;
-        var sunset;
         var sunriseMilli;
         var sunsetMilli;
         
