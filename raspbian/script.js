@@ -9,9 +9,6 @@ $(document).ready(function() {
         getSunRiseSet(function() {
                 update();
         });
-        
-        setInterval(getSunRiseSet, 21600000); //6 hours
-        setInterval(update, 1200000); //20 minutes
 
         function getSunRiseSet(callback) {
                 $.get("https://api.sunrise-sunset.org/json?lat=41.15588648&lng=-80.0806389&formatted=0", function(data) {
