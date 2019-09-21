@@ -17,6 +17,7 @@
     background-image: none
 }
 
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -26,14 +27,15 @@ body {
 @media screen and (max-width: 1283px) {
     #main-video {
         max-width: 100%;
-    }    
+    }
 }
+
 @media screen and (min-width: 1284px) {
-    
+
     #main-video {
-        min-width: 100%; 
+        min-width: 100%;
         min-height: 100%;
-    }    
+    }
 }
 
 #main-video {
@@ -42,7 +44,7 @@ body {
 }
 
 #video-overlay {
-    position:  absolute;
+    position: absolute;
     /* bottom: 0; */
     top: 50;
     width: 100%;
@@ -55,21 +57,40 @@ body {
 
 
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-60 { font-size: 60px; }
-.material-icons.md-72 { font-size: 72px; }
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-60 {
+    font-size: 60px;
+}
+
+.material-icons.md-72 {
+    font-size: 72px;
+}
 
 .material-icons {
     line-height: inherit;
 }
+
 @media (max-width:767px) {
     .navbar-brand {
         margin-top: 15px;
     }
 }
+
 /*
 .container {
     width: 100%;
@@ -86,12 +107,10 @@ body {
 
 /* Coding experience bars */
 
-.program  {
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 3%;
-    padding-right: 3%;
-    max-width: 15%;
+.program {
+    padding: 100px;
+    max-width: 300px;
+    margin: 25px !important;
 }
 
 .program_image {
@@ -100,63 +119,87 @@ body {
 
 /* Define colors */
 
-.python {
-    background-color: #1b3952;
+.kotlin {
+    background-color: #686dc5;
+    box-shadow: 0 5px 12px #b6b9ff;
 }
 
-.python > span {
+.kotlin>span {
+    background-color: #6c74ff;
+}
+
+.python {
+    background-color: #1b3952;
+    box-shadow: 0 5px 12px #7c95aa;
+}
+
+.python>span {
     background-color: #1b3952;
 }
 
 .java {
     background-color: #3a4e5f;
+    box-shadow: 0 5px 12px #707b85;
 }
 
-.java > span {
+.java>span {
     background-color: #3a4e5f;
 }
 
-.html {
-        background-color: #f16529;
+.c {
+    background-color: #212959;
+    box-shadow: 0 5px 12px #495285;
 }
 
-.html > span {
+.c>span {
+    background-color: #212959;
+}
+
+.html {
+    background-color: #f16529;
+    box-shadow: 0 5px 12px #ffd0bc;
+}
+
+.html>span {
     background-color: #f16529;
 }
 
 .css {
     background-color: #29a9df;
+    box-shadow: 0 5px 12px #90cae2;
 }
 
-.css > span {
+.css>span {
     background-color: #29a9df;
 }
 
 .javascript {
     background-color: #ffcc33;
+    box-shadow: 0 5px 12px #ffe597;
 }
 
-.javascript > span {
+.javascript>span {
     background-color: #ffcc33;
 }
 
 .autohotkey {
     background-color: #0e6915;
+    box-shadow: 0 5px 12px #456447;
 }
 
-.autohotkey > span {
+.autohotkey>span {
     background-color: #0e6915;
 }
 
 
-.progress { 
+.progress {
     height: 60px;
     border-radius: 0px;
     margin: 0 0 60px 0;
     background: #eee;
 }
 
-.progress > span {
+.progress>span {
     display: block;
     height: 100%;
     position: relative;
@@ -176,21 +219,22 @@ body {
 ::-webkit-scrollbar {
     width: 15px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 2px;
     border-radius: 2px;
     background: #ccc;
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: #ddd; 
+    background: #ddd;
 }
 
 .btn-primary,
@@ -351,10 +395,11 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 @media screen and (max-width: 767px) {
+
     .navbar-custom .nav li a,
     .navbar-custom .navbar-toggle {
         color: #252627 !important;
-    }    
+    }
 }
 
 .navbar-custom .nav li a,
@@ -398,7 +443,9 @@ fieldset[disabled] .btn-xl:hover {
     color: #00AFC6;
     outline: 0
 }
+
 @media (min-width:768px) {
+
     .navbar-custom .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus {
         color: #00AFC6;
@@ -407,10 +454,11 @@ fieldset[disabled] .btn-xl:hover {
         border-right-style: solid;
         border-bottom-style: hidden;
         border-left-style: solid;
-        }     
+    }
 }
 
 @media (max-width:767px) {
+
     .navbar-custom .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:focus {
         color: #00AFC6;
@@ -419,7 +467,7 @@ fieldset[disabled] .btn-xl:hover {
         border-right-style: hidden;
         border-bottom-style: hidden;
         border-left-style: solid;
-        }     
+    }
 }
 
 /* .navbar-custom .navbar-nav>.active>a:focus, */
@@ -430,7 +478,8 @@ fieldset[disabled] .btn-xl:hover {
 
 .navbar-default .navbar-nav>.active>a,
 /* .navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover*/{
+.navbar-default .navbar-nav>.active>a:hover*/
+    {
     color: #00AFC6;
 }
 
@@ -443,6 +492,7 @@ fieldset[disabled] .btn-xl:hover {
         transition: padding .3s;
         border: none
     }
+
     .navbar-custom .navbar-brand {
         padding-top: 20px;
         font-size: 3em;
@@ -450,13 +500,16 @@ fieldset[disabled] .btn-xl:hover {
         -moz-transition: all .3s;
         transition: all .3s
     }
+
     .navbar-custom .navbar-nav>.active>a {
         border-radius: 0;
     }
+
     .navbar-custom.affix {
         background-color: #eee;
         padding: 0px;
     }
+
     .navbar-custom.affix .navbar-brand {
         font-size: 1.5em;
     }
@@ -498,25 +551,25 @@ header .intro-text .intro-heading {
 
 header .intro-text {
     position: relative;
-    
+
 }
 
 @media screen and (min-width: 1183px) {
     header .intro-text {
         margin-top: calc((90% - 8070px)/13);
-    }    
+    }
 }
 
 @media screen and (max-width: 1182px) and (min-width: 601px) {
     header .intro-text {
         margin-top: calc((90% - 8070px)/18);
-    }    
+    }
 }
 
 @media screen and (max-width: 600px) {
     header .intro-text {
         margin-top: calc((90% - 8070px)/20);
-    }  
+    }
 }
 
 @media (min-width:768px) {
@@ -524,6 +577,7 @@ header .intro-text {
         /* padding-top: 600px;
         padding-bottom: 100px */
     }
+
     header .intro-text .intro-lead-in {
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-style: italic;
@@ -531,6 +585,7 @@ header .intro-text {
         line-height: 40px;
         margin-bottom: 25px
     }
+
     header .intro-text .intro-heading {
         font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
@@ -773,27 +828,32 @@ footer ul.quicklinks {
     .timeline:before {
         left: 50%
     }
+
     .timeline>li {
         margin-bottom: 100px;
         min-height: 100px
     }
+
     .timeline>li .timeline-panel {
         width: 41%;
         float: left;
         padding: 0 20px 20px 30px;
         text-align: right
     }
+
     .timeline>li .timeline-image {
         width: 100px;
         height: 100px;
         left: 50%;
         margin-left: -50px
     }
+
     .timeline>li .timeline-image h4 {
         font-size: 13px;
         margin-top: 16px;
         line-height: 18px;
     }
+
     .timeline>li.timeline-inverted>.timeline-panel {
         float: right;
         text-align: left;
@@ -802,18 +862,22 @@ footer ul.quicklinks {
 }
 
 @media (min-width:992px) {
+
     .timeline>li .timeline-panel,
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px
     }
+
     .timeline>li {
         min-height: 150px
     }
+
     .timeline>li .timeline-image {
         width: 150px;
         height: 150px;
         margin-left: -75px
     }
+
     .timeline>li .timeline-image h4 {
         font-size: 18px;
         margin-top: 30px;
@@ -825,17 +889,21 @@ footer ul.quicklinks {
     .timeline>li {
         min-height: 170px
     }
+
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px
     }
+
     .timeline>li .timeline-image {
         width: 170px;
         height: 170px;
         margin-left: -85px
     }
+
     .timeline>li .timeline-image h4 {
         margin-top: 40px
     }
+
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px
     }
