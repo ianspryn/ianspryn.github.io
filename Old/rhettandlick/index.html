@@ -1,13 +1,22 @@
 <html>
 
 <body>
-
+<script>
+        var ua = navigator.userAgent.toLowerCase();
+var is_safari = (ua.indexOf("safari/") > -1 && ua.indexOf("chrome") < 0);
+if(is_safari) {
+    var video = document.getElementById('#video');
+    setTimeout(function() {
+       video.play();
+    }, 50);
+}   
+</script>
         <head>
                 <link href="style.css" rel="stylesheet" type="text/css">
         </head>
         <div class="video-container">
 
-                <video autoplay muted loop="true" width="1280" height="720">
+                <video id="video" autoplay muted loop="true" width="1280" height="720">
                         <source type="video/mp4" src="video.mp4">
                 </video>
         </div>
