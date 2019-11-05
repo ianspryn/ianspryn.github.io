@@ -1,37 +1,25 @@
-//Sunrise and sunset times calculated from https://sunrise-sunset.org/api
-
-$(document).ready(function() {
-
-        var sunriseMilli;
-        var sunsetMilli;
-        
-        //INITIAL RUN
-        getSunRiseSet(function() {
-                update();
-        });
-
-        function getSunRiseSet(callback) {
-                $.get("https://api.sunrise-sunset.org/json?lat=41.15588648&lng=-80.0806389&formatted=0", function(data) {
-                        sunriseMilli = Date.parse(data.results.sunrise);
-                        sunsetMilli = Date.parse(data.results.sunset);
-                        if (callback) {
-                                callback();     
-                        }
-                });
-        };
+// var temperatureMap = $("<script",
+//         {
+//                 src: "https://darksky.net/map-embed/@temperature,41.155,-80.079,9.js?marker=41.155,-80.079&marker-name=College&embed=true&timeControl=false&fieldControl=false&defaultField=radar"
+//         })
+// var radarMap = $("<script>",
+//         {
+//                 src: "https://darksky.net/map-embed/@radar,41.155,-80.079,9.js?marker=41.155,-80.079&marker-name=College&embed=true&timeControl=false&fieldControl=false&defaultField=radar"
+//         })
 
 
-        function update() {
-                if ((new Date().getTime()) > sunriseMilli && (new Date().getTime()) << sunsetMilli) {
-                        //If it is after sunrise and before sunset, go to light page
-                        if (window.location.href.indexOf("raspbian-dark.html") > -1) {
-                                window.location.href = ("index.html");
-                        }
-                } else {
-                        //Otherwise, it is night time, so go to dark page
-                        if (window.location.href.indexOf("index.html") > -1) {
-                                window.location.href = ("raspbian-dark.html");
-                        }
+$(document).ready(function () {
+        console.log("READY")
+        $.getJSON("https://ian-spryn-dark-sky.herokuapp.com/api/weather", { latitude: "41.155", longitude: "-80.079" }, (data) => {
+                console.log(data)
+                let nearestStormDistance = data["currently"]["nearestStormDistance"]
+                //no storms/rain around, show the temperature map instead and zoom out a little
+                if (nearestStormDistance > 0) {
+                        $("#radar").remove()
                 }
-        };
-});
+                //there is a storm/rain around, show the radar map and zoom in a little
+                else {
+                        $("#temperature").remove()
+                }
+        })
+})

@@ -3,12 +3,19 @@ html, body {
         margin: 0;
 }
 
+body {
+        background-color: #121212;
+}
+
 #dark {
         background-color: #111;
 }
 
+
+
+ /* Darksky Radar */
 iframe#map-embed-iframe {
-        height: 679px !important;
+        height: 890px !important;
 }
 iframe.footer {
         display: none;
@@ -24,4 +31,8 @@ iframe.footer {
 #calendar {
         max-width: 900px;
         margin: 0 auto;
+}
+
+iframe.ol-overlaycontainer-stopevent {
+        display: none;
 }
